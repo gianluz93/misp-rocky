@@ -74,7 +74,7 @@ chown apache:apache /var/www/MISP/app/attachments
 
 # File permission
 chown -R root:apache /var/www/MISP
-find /var/www/MISP -type d -exec chmod g=rx '{}' ';'
+find /var/www/MISP -type d -exec chmod g=rx '{}' \;
 #find /var/www/MISP -type d -exec chmod g=rx {} \;
 
 chmod -R g+r,o= /var/www/MISP
